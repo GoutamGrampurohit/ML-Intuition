@@ -4,9 +4,7 @@ Loss functions commonly used in Machine Learning and Deep Learning.
 
 import numpy as np
 
-
 EPSILON = 1e-15
-
 
 def validate_same_shape(y_true: np.ndarray, y_pred: np.ndarray) -> None:
     """
