@@ -144,13 +144,11 @@ class GradientBoostingClassifier:
             )
 
             self.models.append(tree)
-
             # Track loss
             loss = log_loss(
                 target,
                 self.sigmoid(predictions),
             )
-
             self.loss_history.append(loss)
 
     def predict_proba(
