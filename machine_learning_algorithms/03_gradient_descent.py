@@ -126,12 +126,9 @@ def compute_cost():
     """
     Computes Mean Squared Error Cost Function
     """
-
     total_error = 0
-
     for i in range(m):
         total_error += _error(i) ** 2
-
     return total_error / (2 * m)
 
 
