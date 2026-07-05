@@ -45,7 +45,6 @@ class DecisionTree:
             raise ValueError(
                 "Labels must be one-dimensional"
             )
-
         return np.mean(
             (labels - prediction) ** 2
         )
@@ -84,7 +83,6 @@ class DecisionTree:
         x = x[sorted_indices]
         y = y[sorted_indices]
 
-        # Stopping conditions
         if (
             len(x) < 2 * self.min_leaf_size
             or self.depth <= 1
