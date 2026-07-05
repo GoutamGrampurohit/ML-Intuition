@@ -51,9 +51,7 @@ class PolynomialRegression:
         """
         Construct Vandermonde design matrix.
         """
-
         data = np.asarray(data)
-
         if data.ndim != 1:
             raise ValueError(
                 "Data must have dimensions N x 1"
