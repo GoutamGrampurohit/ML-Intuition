@@ -117,7 +117,6 @@ class PCA:
         """
         Transform data into lower-dimensional space.
         """
-
         if self.components is None:
             raise ValueError(
                 "PCA model has not been fitted"
@@ -131,7 +130,6 @@ class PCA:
             X_centered,
             self.components.T,
         )
-
     def fit_transform(
         self,
         X: np.ndarray,
