@@ -324,7 +324,6 @@ def main() -> None:
             random_state=42,
         )
     )
-
     # Initialize model
     model = (
         GradientBoostingRegressionModel(
@@ -357,18 +356,15 @@ def main() -> None:
         y,
         cv=5,
     )
-
     # Feature Importance
     model.plot_feature_importance(
         X.columns
     )
-
     # Actual vs Predicted
     model.plot_predictions(
         y_test,
         y_pred,
     )
-
     # Residual Plot
     model.plot_residuals(
         y_test,
