@@ -99,14 +99,12 @@ class GaussianNaiveBayesClassifier:
         """
         Evaluate classifier performance.
         """
-
         predictions = self.predict(x_test)
 
         accuracy = accuracy_score(
             y_test,
             predictions,
         )
-
         print(
             f"\nModel Accuracy: "
             f"{accuracy * 100:.2f}%"
